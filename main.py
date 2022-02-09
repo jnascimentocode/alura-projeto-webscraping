@@ -1,10 +1,7 @@
-from distutils.filelist import findall
 from urllib.request import urlopen, urlretrieve
 from bs4 import BeautifulSoup
 import os
 import pandas as pd
-
-from soupsieve import SoupSieve
 
 def trata_html(input):
     return " ".join(input.split()).replace('> <', '><')
